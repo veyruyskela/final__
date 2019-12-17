@@ -4,6 +4,7 @@ import './media-header.scss';
 import BurgerLine from "../BurgerLine";
 import ItemOfCategories from "../ItemOfCategories";
 import logo from "../../../img/logo.png";
+import Search from "../Search";
 
 class Header extends Component {
     render() {
@@ -36,7 +37,6 @@ class Header extends Component {
         ];
         return (
         <div className={'header'}>
-            {/*<a href={'#'} className={'header__logo'}>Believe in Tomorrow</a>*/}
             <a href={'#'} className={'header__logo'}><img className={'header__img'} src={logo} alt={'logo'}/></a>
             <button className={'header__create-post-btn'}><i className="fas fa-plus"/></button>
             <a href={'#'} onClick={toggleSearchContainer} className={'header__search-icon'}><i className="fas fa-search"/></a>
@@ -59,6 +59,7 @@ class Header extends Component {
                     )
                 })}
             </div>
+            <Search/>
         </div>
     )
     }
@@ -77,7 +78,7 @@ function filterByType(type){
                 console.log('No items')
             )
         })
-};
+}
 function toggleSearchContainer(e) {
     e.preventDefault();
     document.querySelector('.header__search-container').classList.toggle('hidden');
