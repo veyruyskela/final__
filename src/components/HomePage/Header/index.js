@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import './index.scss';
 import './media-header.scss';
-import BurgerLine from "../BurgerLine";
+import BurgerLine from "../BurgerLine/index";
 import ItemOfCategories from "../ItemOfCategories";
 import logo from "../../../img/logo.png";
-import Search from "../Search";
+import Search from "../../HomePage/Search/index";
 
 class Header extends Component {
     render() {
