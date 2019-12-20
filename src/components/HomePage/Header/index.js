@@ -3,7 +3,6 @@ import './index.scss';
 import './media-header.scss';
 import BurgerLine from "../BurgerLine/index";
 import ItemOfCategories from "../ItemOfCategories";
-import logo from "../../../img/logo.png";
 import Search from "../../HomePage/Search/index";
 
 class Header extends Component {
@@ -24,21 +23,22 @@ class Header extends Component {
                 content:'Donate',
                 handler: function (event) {
                     event.preventDefault();
-                    filterByType('share');
+                    filterByType('donate');
                 }
             },
             {
                 content:'Take it',
                 handler: function (event) {
                     event.preventDefault();
-                    filterByType('need');
+                    filterByType('take it');
                 }
             }
         ];
         return (
         <div className={'header'}>
-            <a href={'#'} className={'header__logo'}><img className={'header__img'} src={logo} alt={'logo'}/></a>
-            <button className={'header__create-post-btn'}><i className="fas fa-plus"/></button>
+
+                <a className={'header__logo'} href={'/'}>Believe in Tomorrow</a>
+               <a href={'/new'}className={'header__create-post-btn'}><i className="fas fa-plus"/></a>
             <a href={'#'} onClick={toggleSearchContainer} className={'header__search-icon'}><i className="fas fa-search"/></a>
 
             <div className="header__burger">
@@ -66,12 +66,13 @@ class Header extends Component {
 
 }
 function filterByType(type){
-    fetch('https://my-json-server.typicode.com/LeylaM97/json_placeholder/users')
+    fetch('https://my-json-server.typicode.com/LeylaM97/json_placeholder/posts')
         .then(response => response.json())
         .then(result => {
-            const item = result.filter(obj => obj.type===type);
-            if(item.length!==0){
-                item.forEach(i=>
+            const items = result.filter(obj => obj.type===type);
+            const activeItems = items.filter(item => item.isActive === true);
+            if(activeItems.length!==0){
+                activeItems.forEach(i=>
                     console.log(i)
                 )
             }else(

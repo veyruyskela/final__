@@ -22,9 +22,10 @@ class Search extends Component {
         fetch('https://my-json-server.typicode.com/LeylaM97/json_placeholder/posts')
             .then(response => response.json())
             .then(result => {
-                const item = result.filter(obj => obj.title.toLowerCase().includes(this.state.value.toLowerCase()));
-                if(item.length!==0){
-                    item.forEach(i=>
+                const items = result.filter(obj => obj.title.toLowerCase().includes(this.state.value.toLowerCase()));
+                const activeItems = items.filter(item => item.isActive===true);
+                if(activeItems.length!==0){
+                    activeItems.forEach(i=>
                         console.log(i)
                     )
                 }else(
@@ -37,10 +38,13 @@ class Search extends Component {
         return (
             <div className={this.state.class}>
                 <form className={"header__search-form"}>
-                    <input className={'header__search-input'} type={"text"} placeholder={"Search for item"}
-                           name={"search"} value={this.state.value} onChange={this.handleChange}/>
-                    <button className={'header__cancel-btn'} onClick={this.removeSearchContainer}><i
-                        className="fas fa-times"/></button>
+                    <div>
+                        <input className={'header__search-input'} type={"text"} placeholder={"Search for item"}
+                               name={"search"} value={this.state.value} onChange={this.handleChange}/>
+                        <button className={'header__cancel-btn'} onClick={this.removeSearchContainer}><i
+                            className="fas fa-times"/></button>
+                    </div>
+
                     <button className={'header__search-btn'}  onClick={this.searchItem}>Search</button>
                 </form>
             </div>

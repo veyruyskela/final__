@@ -1,0 +1,13 @@
+@media screen and (min-width: 960px) {
+.create-post{
+  &__form{
+    padding-top: 0.5rem;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-evenly;
+  }
+  &__next-btn{
+   grid-column: 1/3;
+  }
+}
+}
