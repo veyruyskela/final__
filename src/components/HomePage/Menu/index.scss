@@ -1,0 +1,33 @@
+.categories {
+  &__wrapper {
+    text-align: right;
+  }
+  &__list {
+    text-align: right;
+    display: inline-block;
+    &--item {
+      font-family: monospace;
+      font-size: 20px;
+      font-weight: 100;
+      color: #ffffff;
+      background-color: black;
+      padding: 15px;
+      border-top: 1px solid #444444;
+      &:last-child {
+        border-bottom: 1px solid #444444;
+      }
+      &:hover {
+        color: #0066cc;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .categories {
+    &__list {
+      width: 100%;
+    }
+  }
+}
