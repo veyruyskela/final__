@@ -38,7 +38,7 @@ class Header extends Component {
         <div className={'header'}>
 
                 <a className={'header__logo'} href={'/'}>Believe in Tomorrow</a>
-               <a href={'/new'}className={'header__create-post-btn'}><i className="fas fa-plus"/></a>
+               <a href={'/new'} className={'header__create-post-btn'}><i className="fas fa-plus"/></a>
             <a href={'#'} onClick={toggleSearchContainer} className={'header__search-icon'}><i className="fas fa-search"/></a>
 
             <div className="header__burger">

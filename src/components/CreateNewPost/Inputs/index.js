@@ -1,12 +1,13 @@
 import React, {Component} from "react";
+import InputMask from 'react-input-mask';
 
 class Inputs extends Component{
     render() {
-        const {label,type,pattern,placeholder,onChange} = this.props;
+        const {label,type,placeholder,onChange,mask,pattern,title} = this.props;
         return (
                     <div className={'create-post__form-item'}>
                         <p className={'create-post__form-label'}> {label} </p>
-                        <input type={type} className={'create-post__form-input'} pattern={pattern} onChange={onChange} placeholder={placeholder} required/>
+                        <InputMask type={type} className={'create-post__form-input'} title={title} mask={mask} pattern={pattern} onChange={onChange} placeholder={placeholder} required/>
                     </div>
 
 
