@@ -1,0 +1,70 @@
+.donate-details{
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5,auto);
+  padding-bottom: 1.5rem;
+  &__header{
+    order:1;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    color:  #009900;
+    font-weight: bold;
+  }
+  &__city-date{
+    order:2;
+    text-align: right;
+    padding-right: 2rem;
+    font-size: 1rem;
+    color: #666666;
+  }
+  &__img{
+    order:3;
+    box-shadow: 5px 5px 20px #a6a6a6;
+    overflow: hidden;
+    height: 15rem;
+    justify-self: stretch;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 0.3rem;
+  }
+  &__desc-container{
+    order:4;
+    box-shadow: 5px 5px 20px #a6a6a6;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #666666;
+    border-radius: 0.3rem;
+    text-align: justify;
+  }
+  &__user-info{
+    order:5;
+    box-shadow: 5px 5px 20px #a6a6a6;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #666666;
+    border-radius: 0.3rem;
+    text-align: justify;
+  }
+  &__title{
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color:#336699;
+  }
+  &__subtitle{
+    font-size: 1rem;
+    margin-top: 0.3rem;
+  }
+  &__content{
+    font-size: 0.8rem;
+  }
+}

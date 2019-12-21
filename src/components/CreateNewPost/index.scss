@@ -1,0 +1,88 @@
+
+.create-post{
+  font-family: sans-serif;
+  background-color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  &__header{
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding-bottom: 1.5rem;
+    color:  #009900;
+  }
+  &__formName{
+    text-align: center;
+    padding-bottom: 1rem;
+
+  }
+  &__form{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border: 1px solid  #009900;
+    border-radius: 0.3rem;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    box-shadow: 5px 5px 20px #a6a6a6;
+  }
+  &__form-item{
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0.8rem;
+  }
+  &__form-label{
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+  &__form-label:after{
+    content: '*';
+    color: red;
+  }
+  &__form-input{
+    box-shadow: 5px 5px 20px #a6a6a6;
+    border-radius: 0.2rem;
+    border: 1px solid grey;
+    font-size: 1rem;
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  &__next-btn{
+    background-color: #009900;
+    color: #fff;
+    border: 1px transparent solid;
+    justify-self: center;
+    align-self: center;
+    border-radius: 0.3rem;
+    padding:0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  &__next-btn:hover{
+    border: 3px #009900 solid;
+  }
+
+  &__fieldset{
+    box-shadow: 5px 5px 20px #a6a6a6;
+    border-radius: 0.2rem;
+    border: 1px solid grey;
+    padding: 0.3rem 0.2rem;
+  }
+  &__form-radio{
+    margin: 0.3rem 0.3rem;
+  }
+  &__form-radio-text{
+    font-style: italic;
+    font-size: 1rem;
+    padding-right: 0.5rem;
+  }
+}
+.hidden{
+  display: none;
+}
