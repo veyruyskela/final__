@@ -9,9 +9,7 @@ function App() {
     return (
         <div>
             <Header/>
-
             <Menu/>
-
             <Router>
                 <Switch>
                     <Route path='/' exact/>

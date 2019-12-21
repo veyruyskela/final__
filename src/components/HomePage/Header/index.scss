@@ -1,14 +1,14 @@
-html{
+html {
   font-size: 15px;
 }
-.header{
+.header {
   background-color: black;
   display: grid;
   grid-template-columns: 3.3fr 1fr 0.7fr 1fr;
-  grid-template-rows: repeat(2,auto);
+  grid-template-rows: repeat(2, auto);
   align-items: center;
-  font-family:sans-serif;
-  &__logo{
+  font-family: sans-serif;
+  &__logo {
     order:1;
     overflow: hidden;
     font-size: 1.2rem;
@@ -18,11 +18,11 @@ html{
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  &__logo:hover{
+  &__logo:hover {
     color: #fff;
   }
-  &__create-post-btn{
-    order:2;
+  &__create-post-btn {
+    order: 2;
     color: white;
     font-size: 1.1rem;
     border: 2px solid transparent;
@@ -33,53 +33,43 @@ html{
     cursor: pointer;
     justify-self: center;
   }
-  &__create-post-btn:hover{
+  &__create-post-btn:hover {
     border: 2px solid #fff;
   }
-
-  &__search-icon{
+  &__search-icon {
     order:3;
     font-size: 1.1rem;
     color: white;
     justify-self: end;
   }
-  &__search-icon:hover{
+  &__search-icon:hover {
     color: #0066cc;
   }
-  &__burger{
+  &__burger {
     order:4;
     width: 4.1rem;
     height: 3.7rem;
     justify-self: center;
     cursor: pointer;
   }
-  &__burger-line{
+  &__burger-line {
     width: 1.6rem;
     height: 0.2rem;
     background-color: white;
     margin: 0.2rem 0.2rem 0.2rem 1.3rem;
   }
-  &__burger-line:first-child{
+  &__burger-line:first-child {
     margin-top: 1.3rem;
-  }/*
-  &__burger:hover &__burger-line2{
-    display: none;
   }
-  &__burger:hover &__burger-line1{
-    transform: rotate(-45deg) translate(-0.3rem, 0.2rem);
-  }
-  &__burger:hover &__burger-line3{
-    transform: rotate(45deg) translate(-0.1rem, 0);
-  }*/
-  &__list-of-categories{
-    order:5;
+  &__list-of-categories {
+    order: 5;
     border-top: 1px solid white;
     grid-column: 1/5;
     background-color: black;
     display: flex;
     justify-content: space-evenly;
   }
-  &__list-of-categories-item{
+  &__list-of-categories-item {
     color: white;
     text-decoration: none;
     justify-self: center;
@@ -89,7 +79,7 @@ html{
     margin-bottom: 1rem;
     font-size: 1rem;
   }
-  &__list-of-categories-item:hover{
+  &__list-of-categories-item:hover {
     color: #0066cc;
   }
 }

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './index.scss'
 
 class Search extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {value: '', class:"header__search-container hidden"};
         this.handleChange = this.handleChange.bind(this);
@@ -10,10 +10,10 @@ class Search extends Component {
         this.removeSearchContainer = this.removeSearchContainer.bind(this);
     }
 
-    handleChange(event){
+    handleChange(event) {
         this.setState({value: event.target.value});
     }
-    removeSearchContainer(){
+    removeSearchContainer() {
         this.setState({class: "header__search-container hidden" });
     }
 

@@ -30,6 +30,7 @@ class CreateNewPost extends Component{
             });
             this.setState({formName:'Post Details Form', form2:'create-post__form', form1: 'create-post__form hidden'} );
     }
+
     Category(){
         fetch('https://my-json-server.typicode.com/LeylaM97/json_placeholder/categories',
             {
@@ -43,6 +44,7 @@ class CreateNewPost extends Component{
                 console.log(result)
             })
     }
+
     Create(){
         fetch('https://my-json-server.typicode.com/LeylaM97/json_placeholder/posts',
             {
@@ -60,7 +62,7 @@ class CreateNewPost extends Component{
                 result.date=this.Date();
                 console.log(result)
                 this.setState({formName:'Post Was Successfully Created! Thank You!', form2:'create-post__form hidden'} );
-    })
+            })
     }
 
     Date(){
@@ -70,7 +72,6 @@ class CreateNewPost extends Component{
         const day=date.getDate();
         return `${day}-${month}-${year}`
     }
-
 
     render() {
         const inputList=[
@@ -114,7 +115,6 @@ class CreateNewPost extends Component{
                 <h2 className={'create-post__header'}>Create New Post</h2>
                 <p className={'create-post__formName'}>{this.state.formName}</p>
                 <form onSubmit={this.Next} className={this.state.form1} >
-
                     {inputList.map((input, key)=>{
                         return(
                             <Inputs
@@ -175,9 +175,7 @@ class CreateNewPost extends Component{
 
                     <input type={'submit'} value={'Create'} className={'create-post__next-btn'}/>
                 </form>
-
             </div>
-
         );
     }
 }

@@ -8,11 +8,8 @@ class Inputs extends Component{
                         <p className={'create-post__form-label'}> {label} </p>
                         <input type={type} className={'create-post__form-input'} pattern={pattern} onChange={onChange} placeholder={placeholder} required/>
                     </div>
-
-
         );
     }
 }
-
 
 export default Inputs;

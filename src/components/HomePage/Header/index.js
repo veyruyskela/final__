@@ -66,17 +66,17 @@ class Header extends Component {
     }
 
 }
-function filterByType(type){
+function filterByType(type) {
     fetch('https://my-json-server.typicode.com/LeylaM97/json_placeholder/posts')
         .then(response => response.json())
         .then(result => {
             const items = result.filter(obj => obj.type===type);
             const activeItems = items.filter(item => item.isActive === true);
-            if(activeItems.length!==0){
+            if (activeItems.length !== 0) {
                 activeItems.forEach(i=>
                     console.log(i)
                 )
-            }else(
+            } else (
                 console.log('No items')
             )
         })

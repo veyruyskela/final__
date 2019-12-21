@@ -1,22 +1,20 @@
-
-.create-post{
+.create-post {
   font-family: sans-serif;
   background-color: #fff;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  &__header{
+  &__header {
     text-align: center;
     font-size: 1.5rem;
     text-transform: capitalize;
     padding-bottom: 1.5rem;
     color:  #009900;
   }
-  &__formName{
+  &__formName {
     text-align: center;
     padding-bottom: 1rem;
-
   }
-  &__form{
+  &__form {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     border: 1px solid  #009900;
@@ -27,20 +25,20 @@
     justify-content: center;
     box-shadow: 5px 5px 20px #a6a6a6;
   }
-  &__form-item{
+  &__form-item {
     font-weight: bold;
     font-size: 1rem;
     margin: 0.8rem;
   }
-  &__form-label{
+  &__form-label {
     font-size: 1.1rem;
     font-style: italic;
   }
-  &__form-label:after{
+  &__form-label:after {
     content: '*';
     color: red;
   }
-  &__form-input{
+  &__form-input {
     box-shadow: 5px 5px 20px #a6a6a6;
     border-radius: 0.2rem;
     border: 1px solid grey;
@@ -51,7 +49,7 @@
     margin-top: 0.5rem;
     font-style: italic;
   }
-  &__next-btn{
+  &__next-btn {
     background-color: #009900;
     color: #fff;
     border: 1px transparent solid;
@@ -64,24 +62,23 @@
     margin-top: 1rem;
     margin-bottom: 1.5rem;
   }
-  &__next-btn:hover{
+  &__next-btn:hover {
     border: 3px #009900 solid;
   }
-
-  &__fieldset{
+  &__fieldset {
     box-shadow: 5px 5px 20px #a6a6a6;
     border-radius: 0.2rem;
     border: 1px solid grey;
     padding: 0.3rem 0.2rem;
   }
-  &__form-radio{
+  &__form-radio {
     margin: 0.2rem 0.3rem;
   }
-  &__form-radio-text{
+  &__form-radio-text {
     font-style: italic;
     font-size: 1rem;
   }
 }
-.hidden{
+.hidden {
   display: none;
 }
