@@ -4,7 +4,7 @@ import './media-header.scss';
 import BurgerLine from "../BurgerLine/index";
 import ItemOfCategories from "../ItemOfCategories";
 import Search from "../../HomePage/Search/index";
-
+import {Link} from "react-router-dom";
 class Header extends Component {
     render() {
       const burgerLines=[
@@ -37,8 +37,8 @@ class Header extends Component {
         return (
         <div className={'header'}>
 
-                <a className={'header__logo'} href={'/'}>Believe in Tomorrow</a>
-               <a href={'/new'} className={'header__create-post-btn'}><i className="fas fa-plus"/></a>
+            <Link to='/' className={'header__logo'}>Believe in Tomorrow</Link>
+            <Link to='/new' className={'header__create-post-btn'}><i className="fas fa-plus"/></Link>
             <a href={'#'} onClick={toggleSearchContainer} className={'header__search-icon'}><i className="fas fa-search"/></a>
 
             <div className="header__burger">
